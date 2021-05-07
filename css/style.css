@@ -42,6 +42,7 @@ img {
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+  left: -60px;
 }
 
 .navbar-bottom {
