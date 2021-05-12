@@ -13,10 +13,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="sass/normalize.scss" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-bb5189cb-82e7-4b59-a801-3651a6c15168&lang=ru_RU"
-      type="text/javascript"
-    ></script>
   </head>
   <body>
     <header class="navbar">
@@ -155,26 +151,46 @@
           <!--rating hotel-info__rating -->
         </div>
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel__slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="image/Slider-1.jpg" alt="Photo Hotel" />
+                  <img
+                    src="image/Slider-1.jpg"
+                    alt="Photo Hotel"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="image/Slider.jpg" alt="Photo Hotel" />
+                  <img
+                    src="image/Slider.jpg"
+                    alt="Photo Hotel"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="image/Slider-2.jpg" alt="Photo Hotel" />
+                  <img
+                    src="image/Slider-2.jpg"
+                    alt="Photo Hotel"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="image/Slider-3.jpg" alt="Photo Hotel" />
+                  <img
+                    src="image/Slider-3.jpg"
+                    alt="Photo Hotel"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="image/Slider-4.jpg" alt="Photo Hotel" />
+                  <img
+                    src="image/Slider-4.jpg"
+                    alt="Photo Hotel"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 ...
               </div>
@@ -190,7 +206,7 @@
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
                   <strong class="booking__pricetag">$ 8,500</strong>
-                  <span class="booking__per--room">per room / night</span>
+                  <span class="booking__per-room">per room / night</span>
                 </div>
                 <!--booking-->
                 <div class="booking__room">
@@ -234,6 +250,10 @@
       <!-- /.container -->
     </section>
     <script src="js/swiper-bundle.min.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-bb5189cb-82e7-4b59-a801-3651a6c15168&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <script src="js/slider.js"></script>
   </body>
 </html>
