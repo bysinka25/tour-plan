@@ -43,7 +43,7 @@
     width: 340px
   .slider
     width: 100%
-  div#map
+  .map
     width: 340px
 @media (max-width: 767px)
   .container
@@ -97,11 +97,14 @@
       min-height: 450px
   .booking
     width: 100%
-  div#map
+  .map
     width: 100%
+    justify-content: center
 @media (max-width: 576px)
   .container
     width: 87%
+    margin-right: auto
+    margin-left: auto
   .navbar-top
     height: 70px
     padding-top: 26px
@@ -113,15 +116,18 @@
   .hotel
     &-name
       margin-right: 0
+    &-right
+      justify-content: space-around
+      align-content: center
   .swiper-container
     height: 179px
-    width: 280px
+    min-width: 280px
     margin-top: 15px
-  .hotel-slider
-    margin-bottom: 18px
+  .hotel__slider
+    margin-bottom: 10px
   .booking
-    width: 280px
+    min-width: 280px
     height: 210px
-  div#map
+  .map
     height: 173px
-    width: 280px
+    min-width: 280px
