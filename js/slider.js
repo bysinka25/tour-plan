@@ -17,8 +17,8 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: ".reviews-slider__button-next",
-    prevEl: ".reviews-slider__button-prev",
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
   effect: "slide",
   keyboard: {
@@ -26,3 +26,9 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: "true",
   },
 });
+// $(window).scroll(function () {
+//   var st = $(this).scrollTop();
+//   $(".newsletter").css({
+//     transform: "translate(0%, " + st + "%",
+//   });
+// });

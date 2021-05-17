@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sass/normalize.scss" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="sass/normalize.scss" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar">
@@ -239,10 +239,10 @@
               </div>
               <button class="button booking__button">View Other Options</button>
             </div>
-            <div class="map">
+            <div id="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.508873676554!2d98.29302578809626!3d7.9833174494916594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3050392f9ac30e95%3A0xa7041ab5cb97012f!2sHotel%20Phuket!5e0!3m2!1sru!2sru!4v1620938857840!5m2!1sru!2sru"
-                width="100%"
+                width="347"
                 height="213"
                 style="border: 0"
                 allowfullscreen=""
@@ -258,7 +258,12 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="newsletter">
+    <section
+      class="newsletter"
+      data-parallax="scroll"
+      data-image-src="image/newsletter-bg.jpg"
+      data-speed="0.6"
+    >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
@@ -293,6 +298,7 @@
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+
                   <div class="reviews-slider__rating">
                     <img
                       src="image/Stars.svg"
@@ -320,9 +326,9 @@
                       class="reviews-slider__star"
                     />
                   </div>
+
                   <!--/.rating-->
                 </div>
-                <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
                   It was very nice hotel with cleanliness. Staff behavior was
                   good and polite. They welcome us very well. Issue was only
@@ -335,14 +341,9 @@
                   good experience and could recommend.
                 </p>
               </div>
-              <button
-                class="reviews-slider__button reviews-slider__button-prev"
-              ></button>
-              <button
-                class="reviews-slider__button reviews-slider__button-next"
-              ></button>
+              <!-- /.reviews-slider__profile -->
             </div>
-             <div class="swiper-slide">
+            <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
@@ -381,35 +382,44 @@
                   </div>
                   <!--/.rating-->
                 </div>
-                <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. A numquam cumque est sunt voluptas odit quo voluptate eaque quas impedit inventore sint qui quidem, autem alias ducimus laudantium aliquam quis blanditiis, quae provident veniam harum. Est pariatur vero praesentium sed dicta esse aliquid, quia ullam recusandae iure eos minima amet exercitationem voluptates corporis debitis ea provident expedita deleniti delectus similique nemo, suscipit quae veniam? Similique quam fugit, nihil maiores veritatis nemo quod odit vitae, numquam commodi, ad praesentium! Expedita, pariatur.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur illum officiis, dignissimos rerum blanditiis cumque
+                  doloribus sapiente ipsa obcaecati accusantium unde voluptatum,
+                  iste dolore autem aut? Soluta architecto ullam aliquid
+                  corrupti. Quae est, non tempora doloremque eos magnam magni
+                  nobis debitis a dolore excepturi modi ut praesentium corrupti
+                  earum eveniet voluptates reprehenderit vel ipsum ducimus
+                  possimus cupiditate. Nesciunt aliquam molestiae sed sint,
+                  facere iste debitis consequuntur iusto magnam quisquam maiores
+                  itaque repellat voluptas cupiditate impedit rerum
+                  necessitatibus hic id deleniti.
                 </p>
               </div>
-              <button
-                class="reviews-slider__button reviews-slider__button-prev"
-              ></button>
-              <button
-                class="reviews-slider__button reviews-slider__button-next"
-              ></button>
+              <!-- /.reviews-slider__profile -->
             </div>
             <!-- /.reviews-slider__item -->
           </div>
-
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
           <!--/.swiper-slide-->
-            <!-- /.reviews-slider__item -->
-          </div>
-
-          <!--/.swiper-slide-->
+          <!-- /.reviews-slider__item -->
         </div>
-        <!--/.swiper-wrapper-->
-        <!-- If we need navigation buttons -->
 
-        <!--/.reviews-slider-->
+        <!--/.swiper-slide-->
       </div>
+      <!--/.swiper-wrapper-->
+      <!-- If we need navigation buttons -->
+      <!--/.reviews-slider-->
       <!-- /.container -->
     </section>
     <!-- /.reviews -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
   </body>
