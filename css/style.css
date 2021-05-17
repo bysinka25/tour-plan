@@ -831,6 +831,7 @@ img {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
+  max-height: 260px;
 }
 
 .newsletter:before {
@@ -872,7 +873,7 @@ img {
   color: #ffffff;
   font-family: Mulish;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 24px;
   line-height: 30px;
 }
@@ -881,6 +882,7 @@ img {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .subscribe {
@@ -1054,7 +1056,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 32px;
 }
 
 .reviews-slider__star {
@@ -1068,6 +1069,7 @@ img {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+  max-width: 537px;
 }
 
 #map {
@@ -1157,7 +1159,7 @@ img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     max-width: 576px;
     width: 90%;
@@ -1333,8 +1335,11 @@ img {
   .subscribe {
     width: 100%;
   }
+  .subscribe__input {
+    padding-left: 20px;
+  }
   .reviews__title {
-    font-size: 30px;
+    font-size: 18px;
     margin-bottom: 42px;
   }
   .reviews-slider__button {
@@ -1342,13 +1347,13 @@ img {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -90px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -90px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
@@ -1357,6 +1362,7 @@ img {
   }
   .reviews-slider__text {
     font-size: 12px;
+    text-align: left;
   }
   .reviews-slider__profile {
     margin-top: -65px;
