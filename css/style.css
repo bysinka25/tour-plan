@@ -1082,6 +1082,7 @@ img {
 }
 
 .activities__title {
+  margin-top: 0;
   font-family: Mulish;
   font-style: normal;
   font-weight: 700;
@@ -1252,6 +1253,10 @@ img {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews__title {
+    margin-bottom: 50px;
+    font-size: 30px;
   }
   .activities__title {
     margin-bottom: 57px;
@@ -1462,6 +1467,9 @@ img {
   .subscribe__input {
     padding-left: 20px;
   }
+  .reviews {
+    padding-bottom: 0;
+  }
   .reviews__title {
     margin-bottom: 42px;
     margin-left: auto;
@@ -1494,13 +1502,16 @@ img {
     text-align: left;
   }
   .reviews-slider__profile {
-    margin-top: -65px;
+    margin-top: -72px;
   }
   .reviews-slider__rating {
     margin-bottom: 0px;
   }
   .card {
     width: 98%;
+  }
+  .activities {
+    padding-top: 30px;
   }
   .activities__title {
     margin: auto;
