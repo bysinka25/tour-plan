@@ -831,7 +831,6 @@ img {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  max-height: 260px;
 }
 
 .newsletter:before {
@@ -876,6 +875,7 @@ img {
   font-weight: 200;
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 0;
 }
 
 .newsletter-title__strong {
@@ -1252,23 +1252,15 @@ img {
   iframe {
     width: 100%;
   }
-  .newsletter-wrapper {
-    max-width: 576px;
-    width: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   .reviews-slider__item {
     max-width: 580px;
     padding: 0 30px 30px;
   }
   .reviews-slider__item:after, .reviews-slider__item:before {
     display: none;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
   }
   .reviews-slider__button {
     top: 32px;
@@ -1287,9 +1279,27 @@ img {
   }
   .reviews__title {
     font-size: 30px;
+    margin-bottom: 42px;
   }
   .map {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter-wrapper {
+    width: 90%;
+    max-width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
   }
 }
 
@@ -1329,8 +1339,12 @@ img {
   .newsletter {
     padding: 76px 0 83px 0;
   }
-  .newsletter__title {
+  .newsletter-title {
     margin-bottom: 37px;
+    font-size: 20px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
   }
   .subscribe {
     width: 100%;
@@ -1339,8 +1353,13 @@ img {
     padding-left: 20px;
   }
   .reviews__title {
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 245px;
     font-size: 18px;
     margin-bottom: 42px;
+    line-height: 18px;
   }
   .reviews-slider__button {
     top: 32px;
