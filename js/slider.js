@@ -26,9 +26,10 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: "true",
   },
 });
-// $(window).scroll(function () {
-//   var st = $(this).scrollTop();
-//   $(".newsletter").css({
-//     transform: "translate(0%, " + st + "%",
-//   });
-// });
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});

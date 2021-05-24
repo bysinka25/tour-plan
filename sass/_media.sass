@@ -17,6 +17,13 @@
   .footer
     &__input
       flex-basis: 100%
+  .navbar
+    &__user, &__search
+      &--mobile
+        &--visible
+          display: none
+.navbar-menu__item--mobile--hidden
+  display: none
 @media (max-width: 991px)
   .container, 
   .newsletter-wrapper
@@ -40,7 +47,7 @@
   .search
     margin-left: auto
     &__input
-      width: 340px
+      max-width: 340px
   .hotel
     &-grid
       flex-direction: column
@@ -134,17 +141,46 @@
 .cards
   margin-top: 56px
 @media (max-width: 767px)
+  body
+    padding-top: 70px
   .container
     max-width: 576px
     width: 90%
   .navbar
-    &__search, &-menu, &__user
+    &__user
+      flex-direction: column
+      justify-content: center
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &--hidden
+          display: none
+        &_visible
+          display: flex
+          margin-bottom: 27px
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 70px
+      padding-top: 30px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
     &-top
       &__menu-button
         display: flex
-  .search
-    display: none
   .menu
     &-button
       width: 16px
@@ -257,6 +293,20 @@
   //   &-form
   //     grid-row: span 6
   //     grid-column: 8
+  .navbar-menu__item--mobile--visible
+    display: block
+    margin-bottom: 0
+  .user__name--light
+    color: $light
+    margin-left: 0
+  .navbar-top
+    height: 70px
+  .user__avatar
+    margin-bottom: 10px
+  .search__input
+    max-width: 245px
+  .navbar-menu
+    padding: 0
 @media (max-width: 576px)
   .map
     height: 172px
@@ -338,8 +388,10 @@
   .footer
     &__input
       min-width: 281px
+      flex-basis: 90%
     &__message
       min-width: 281px
+      flex-basis: 90%
   .footer-wrapper
     grid-template-columns: 1fr
   .footer__logo
@@ -388,6 +440,7 @@
     margin-top: 10px
     margin-bottom: 15px
     display: flex
+    margin-right: -30px
   .footer__span
     width: 300px
   .footer__span--text
