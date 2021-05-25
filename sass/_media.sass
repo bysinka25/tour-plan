@@ -93,13 +93,13 @@
   .footer
     padding-top: 73px
     &__form
-      max-width: 500px  
+      max-width: 539px  
     &-wrapper
       grid-template-columns: repeat(6, 1fr )
     &__logo
       margin-top: 0
     &__input
-      flex-basis: 44%
+      flex-basis: 48%
     &__logo
       grid-row: 1/2
       grid-column: 1
@@ -138,8 +138,8 @@
       grid-column: span 2
     &__list
       grid-row-gap: 38px
-.cards
-  margin-top: 56px
+  .footer__contacts-input
+    max-width: 539px
 @media (max-width: 767px)
   body
     padding-top: 70px
@@ -258,41 +258,8 @@
   .footer
     &__input
       flex-basis: 100%
-    // &-adaptive
-    //   grid-template-columns: 1fr
-    // &__logo
-    //   grid-row: 1
-    //   grid-column: 1
-    // &__social
-    //   &-network
-    //     grid-row: 2
-    //     grid-column: 1
-    // &__social
-    //   &-network
-    //     grid-column: 2
-    //     grid-row: span 6
-    // &__logo
-    //   grid-column: 1
-      // grid-row: span 6
-  //   &__categories
-  //     grid-column: 3
-  //     grid-row: span 6
-  //   &__additional
-  //     grid-column: 5
-  //     grid-row: span 6
-  //   &__categories
-  //   grid-row: span 6
-  //   grid-column: 5
-  // &__legal
-  //   grid-row: span 6
-  //   grid-column: 6
-  // &__contact
-  //   &-details
-  //     grid-row: span 6
-  //     grid-column: 7
-  //   &-form
-  //     grid-row: span 6
-  //     grid-column: 8
+    &__form
+
   .navbar-menu__item--mobile--visible
     display: block
     margin-bottom: 0
@@ -307,6 +274,15 @@
     max-width: 245px
   .navbar-menu
     padding: 0
+  .cards-wrapper
+    margin-top: 56px
+  .footer__contacts-input
+  .footer__title
+    max-width: 260px
+  .footer__additional
+    width: 100%
+  .footer__legal
+    margin-left: 45px
 @media (max-width: 576px)
   .map
     height: 172px
@@ -424,7 +400,8 @@
     margin-bottom: 15px
   .footer__contacts-form
     grid-row: 7
-    grid-cloumn: 1
+    grid-column: 1
+    width: 281px
   .footer__title--input
     margin-bottom: 15px
     margin-top: 20px
@@ -434,17 +411,32 @@
   .footer__title
     margin-top: 0
   .footer__info
-    display: none
+    flex-direction: column
     margin-top: 10px
     margin-bottom: 15px
     display: flex
     margin-right: -30px
+
   .footer__span
     width: 300px
-  .footer__span--text
+  .footer__сards
     font-size: 10px
     margin-right: 10px
     justify-content: space-between
     margin-bottom: 10px
   .cards-wrapper
+    margin-top: 30px
     flex-wrap: wrap
+  .footer__contacts-input
+    display: flex
+    flex-direction: column
+    margin-top: 22px
+  .footer__info
+    margin-top: 10px
+    order: -1
+    margin-top: 0
+  .footer__button
+    margin-top: 0
+    width: 160px
+    order: 1
+  
