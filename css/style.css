@@ -1693,6 +1693,7 @@ img {
     bottom: 0;
     top: 70px;
     padding-top: 30px;
+    overflow: scroll;
   }
   .navbar-bottom--visible {
     display: block;
