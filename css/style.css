@@ -1407,6 +1407,7 @@ img {
   line-height: 15px;
   color: #ffffff;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .footer__info {
